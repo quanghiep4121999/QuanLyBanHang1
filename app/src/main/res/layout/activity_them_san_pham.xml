@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home">
+    <EditText
+        android:id="@+id/edMaSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Sản Phẩm" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Spinner
+            android:id="@+id/spnLoaiHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_weight="4"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edTenSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Sản Phẩm" />
+
+    <EditText
+        android:id="@+id/edGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá" />
+    <EditText
+        android:id="@+id/edSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btnAddSanPham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addSanPham"
+            android:text="Lưu" />
+        <Button
+            android:id="@+id/btnCancelSanPham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Huỷ" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnShowSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showSanPham"
+        android:text="Danh Sách Sản Phẩm" />
+</LinearLayout>
